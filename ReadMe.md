@@ -28,4 +28,4 @@ Note: `WELCOME_MSG` and `WELCOME_NOT_JOINED` can both be formatted using paramet
 - Run the bot, `python3 bot.py`
 
 # Credits
-- [Mukesh Solanki](https//mkspali.me/tg)
+<a href="https://t.me/mkspali"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
