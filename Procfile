@@ -1,1 +1,1 @@
-BotzHub: python bot.py
+RMCMG: python bot.py
