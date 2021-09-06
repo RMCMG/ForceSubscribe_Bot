@@ -7,9 +7,9 @@
         "telethon",
         "telegram-bot"
     ],
-    "repository": "https://github.com/xditya/ForceSub",
-    "website": "xditya.me",
-    "success_url": "https://t.me/BotzHub",
+    "repository": "https://github.com/RMCMG/ForceSubscribe_Bot",
+    "website": "mkspali.me",
+    "success_url": "https://t.me/RMCMG",
     "env": {
         "API_HASH": {
             "description": "You API HASH from my.telegram.org",
