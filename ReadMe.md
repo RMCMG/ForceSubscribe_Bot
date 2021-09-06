@@ -18,7 +18,7 @@ Forces a user to join your group/channel so as to be able to message in a group.
 Note: `WELCOME_MSG` and `WELCOME_NOT_JOINED` can both be formatted using parameters like `{mention}`, `{title}`, `{fullname}`, `{username}`, `{name}`, `{last}`, `{channel}`
 
 # Deploy to heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https%3A%2F%2Fgithub.com%2FRMCMG%2FForceSubscribe_Bot)
 
 # Deploy locally
 - `git clone https://github.com/xditya/ForceSub`
