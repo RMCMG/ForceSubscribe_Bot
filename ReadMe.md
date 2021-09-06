@@ -21,7 +21,7 @@ Note: `WELCOME_MSG` and `WELCOME_NOT_JOINED` can both be formatted using paramet
 [![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https%3A%2F%2Fgithub.com%2FRMCMG%2FForceSubscribe_Bot)
 
 # Deploy locally
-- `git clone https://github.com/xditya/ForceSub`
+- `git clone https://github.com/RMCMG/ForceSubscribe_Bot`
 - `cd ForceSub`
 - `pip3 install -U -r requirements.txt`
 - `touch .env`,  `nano .env` and fill in the [vars](.env.sample), Ctrl+S, Ctrl+X
