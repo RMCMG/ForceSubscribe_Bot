@@ -144,7 +144,7 @@ async def _(event):
 
 @RMCMG.on(events.NewMessage(pattern="/start"))
 async def strt(event):
-    await event.reply(f"Hi. I'm a force subscribe bot made specially for @{channel}!\n\nCheckout @RMCMG :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Repository", url="https://github.com/RMCMG/ForceSubscribe_Bot")])
+    await event.reply(f"Hi. I'm a force subscribe bot made specially for @{channel}!\n\nCheckout @RMCMG :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Creator", url="https://t.me/mkspali")])
 
     
 print("ForceSub Bot has started.\nDo visit @RMCMG!")
