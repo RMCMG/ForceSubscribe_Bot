@@ -29,3 +29,6 @@ Note: `WELCOME_MSG` and `WELCOME_NOT_JOINED` can both be formatted using paramet
 
 # Credits
 <a href="https://t.me/mkspali"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
+
+# Check This Telegram Bot
+<a href="https://t.me/RMCMG_ForceSubscribe_Bot"> <img src="https://img.shields.io/badge/RMCMG%20Force%20Subscribe%20Bot%20-orange" /> <img src="https://img.shields.io/badge/Best-Bot-ff69b4" /> </a>
