@@ -1,5 +1,5 @@
-#    This file is part of the ForveSub distribution (https://github.com/xditya/ForceSub).
-#    Copyright (c) 2021 Adiya
+#    This file is part of the ForveSub distribution (https://github.com/RMCMG/ForceSubscribe_Bot).
+#    Copyright (c) 2021 RMCMG
 #    
 #    This program is free software: you can redistribute it and/or modify  
 #    it under the terms of the GNU General Public License as published by  
@@ -10,7 +10,7 @@
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
 #    General Public License for more details.
 # 
-#    License can be found in < https://github.com/xditya/ForceSub/blob/main/License> .
+#    License can be found in < https://github.com/RMCMG/ForceSubscribe_Bot/blob/main/License> .
 
 import logging
 import asyncio
@@ -144,8 +144,8 @@ async def _(event):
 
 @BotzHub.on(events.NewMessage(pattern="/start"))
 async def strt(event):
-    await event.reply(f"Hi. I'm a force subscribe bot made specially for @{channel}!\n\nCheckout @BotzHub :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Repository", url="https://github.com/xditya/ForceSub")])
+    await event.reply(f"Hi. I'm a force subscribe bot made specially for @{channel}!\n\nCheckout @RMCMG :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Repository", url="https://github.com/RMCMG/ForceSubscribe_Bot")])
 
     
-print("ForceSub Bot has started.\nDo visit @BotzHub!")
+print("ForceSub Bot has started.\nDo visit @RMCMG!")
 BotzHub.run_until_disconnected()
