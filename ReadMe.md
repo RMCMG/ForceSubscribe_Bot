@@ -28,6 +28,4 @@ Note: `WELCOME_MSG` and `WELCOME_NOT_JOINED` can both be formatted using paramet
 - Run the bot, `python3 bot.py`
 
 # Credits
-- [Telethon](https://github.com/LonamiWebs/Telethon)
-- [BotzHub](https://t.me/BotzHub)
-- [Me](https://xditya.me/tg)
+- [Mukesh Solanki](t.me/mkspali)
