@@ -45,7 +45,7 @@ except:
 
 if (apiid != None and apihash!= None and bottoken != None):
     try:
-        BotzHub = TelegramClient('BotzHub', apiid, apihash).start(bot_token=bottoken)
+        RMCMG = TelegramClient('RMCMG', apiid, apihash).start(bot_token=bottoken)
     except Exception as e:
         print(f"ERROR!\n{str(e)}")
         print("Bot is quiting...")
@@ -61,14 +61,14 @@ channel = xchannel.replace("@", "")
 async def get_user_join(id):
     ok = True
     try:
-        await BotzHub(GetParticipantRequest(channel=channel, participant=id))
+        await RMCMG(GetParticipantRequest(channel=channel, participant=id))
         ok = True
     except UserNotParticipantError:
         ok = False
     return ok
 
 
-@BotzHub.on(events.ChatAction())
+@RMCMG.on(events.ChatAction())
 async def _(event):
     if on_join is False:
         return
@@ -76,7 +76,7 @@ async def _(event):
         user = await event.get_user()
         chat = await event.get_chat()
         title = chat.title if chat.title else "this chat"
-        pp = await BotzHub.get_participants(chat)
+        pp = await RMCMG.get_participants(chat)
         count = len(pp)
         mention = f"[{get_display_name(user)}](tg://user?id={user.id})"
         name = user.first_name
@@ -97,42 +97,42 @@ async def _(event):
         else:
             msg = welcome_not_joined.format(mention=mention, title=title, fullname=fullname, username=username, name=name, last=last, channel=f"@{channel}")
             butt = [Button.url("Channel", url=f"https://t.me/{channel}"), Button.inline("UnMute Me", data=f"unmute_{user.id}")]
-            await BotzHub.edit_permissions(event.chat.id, user.id, until_date=None, send_messages=False)
+            await RMCMG.edit_permissions(event.chat.id, user.id, until_date=None, send_messages=False)
         
         await event.reply(msg, buttons=butt)
 
 
-@BotzHub.on(events.NewMessage(incoming=True))
+@RMCMG.on(events.NewMessage(incoming=True))
 async def mute_on_msg(event):
     if event.is_private:
         return
     if on_new_msg is False:
         return
     x = await get_user_join(event.sender_id)
-    temp = await BotzHub(GetFullUserRequest(event.sender_id))
+    temp = await RMCMG(GetFullUserRequest(event.sender_id))
     if x is False:
         if temp.user.bot:
             return
         nm = temp.user.first_name
         try:
-            await BotzHub.edit_permissions(event.chat.id, event.sender_id, until_date=None, send_messages=False)
+            await RMCMG.edit_permissions(event.chat.id, event.sender_id, until_date=None, send_messages=False)
         except Exception as e:
             print(str(e))
             return
         await event.reply(f"Hey {nm}, seems like you haven't joined our channel. Please join @{channel} and then press the button below to unmute yourself!", buttons=[[Button.url("Channel", url=f"https://t.me/{channel}")], [Button.inline("UnMute Me", data=f"unmute_{event.sender_id}")]])
 
 
-@BotzHub.on(events.callbackquery.CallbackQuery(data=re.compile(b"unmute_(.*)")))
+@RMCMG.on(events.callbackquery.CallbackQuery(data=re.compile(b"unmute_(.*)")))
 async def _(event):
     uid = int(event.data_match.group(1).decode("UTF-8"))
     if uid == event.sender_id:
         x = await get_user_join(uid)
-        nm = (await BotzHub(GetFullUserRequest(uid))).user.first_name
+        nm = (await RMCMG(GetFullUserRequest(uid))).user.first_name
         if x is False:
             await event.answer(f"You haven't joined @{channel} yet!", cache_time=0, alert=True)
         elif x is True:
             try:
-                await BotzHub.edit_permissions(event.chat.id, uid, until_date=None, send_messages=True)
+                await RMCMG.edit_permissions(event.chat.id, uid, until_date=None, send_messages=True)
             except Exception as e:
                 print(str(e))
                 return
@@ -142,10 +142,10 @@ async def _(event):
     else:
         await event.answer("You are an old member and can speak freely! This isn't for you!", cache_time=0, alert=True)
 
-@BotzHub.on(events.NewMessage(pattern="/start"))
+@RMCMG.on(events.NewMessage(pattern="/start"))
 async def strt(event):
     await event.reply(f"Hi. I'm a force subscribe bot made specially for @{channel}!\n\nCheckout @RMCMG :)", buttons=[Button.url("Channel", url=f"https://t.me/{channel}"), Button.url("Repository", url="https://github.com/RMCMG/ForceSubscribe_Bot")])
 
     
 print("ForceSub Bot has started.\nDo visit @RMCMG!")
-BotzHub.run_until_disconnected()
+RMCMG.run_until_disconnected()
