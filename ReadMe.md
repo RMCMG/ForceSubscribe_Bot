@@ -1,36 +1,59 @@
-# <h1 align=center>Force Subscribe Bot</h1>
-<img src = "https://user-images.githubusercontent.com/84823049/120094205-a4157400-c13c-11eb-9a72-8d1111809eb5.jpg">
+<a href="https://github.com/RMCMG/ForceSubscribe_Bot"><img src="https://img.shields.io/badge/RMCMG%20Force%20Subscribe%20Bot-gold?&style=flat-square?&logo=github" width=600px></a></p>
 
-Forces a user to join your group/channel so as to be able to message in a group.
+#
 
-# Features
-- Checks for all newly joined members with a customisable welcome message.
-- Checks for users who are already in the group but has not joined the channel.
+[![Deploy](https://telegra.ph/file/317d6d9511f780a12c471.png)](https://heroku.com/deploy?template=https://github.com/RMCMG/ForceSubscribe_Bot.git)
 
-# Variables
-- `API_ID` - Your telegram api id from my.telegram.org
-- `API_HASH` - Your telegram api hash from my.telegram.org
-- `BOT_TOKEN` - Your telegram bot token.
-- `CHANNEL` - Username of the channel/group where users must join.
-- `WELCOME_MSG` - The welcome message you want.
-`WELCOME_NOT_JOINED` - Welcome message to show if user is not in the channel.
-- `ON_JOIN` - True/False - Set as True if the user must be muted, if not in Channel/group, directly when he joins.
-- `ON_NEW_MSG` - True/False - Set as True if the user must be muted, if not in Channel/group, on sending a message.
+##
 
-Note: `WELCOME_MSG` and `WELCOME_NOT_JOINED` can both be formatted using parameters like `{mention}`, `{title}`, `{fullname}`, `{username}`, `{name}`, `{last}`, `{channel}`
+<p align="center">
+    <a href="https://github.com/RMCMG/ForceSubscribe_Bot/stargazers"><img src="https://img.shields.io/github/stars/RMCMG/ForceSubscribe_Bot?label=Stars&style=flat-square&logo=github&color=F10070" alt="Stars" /></a>
+</p>
+<p align="center">
+    <a href="https://app.codacy.com/manual/RMCMG/ForceSubscribe_Bot/dashboard"> <img src="https://img.shields.io/codacy/grade/4d58f2a402b54aed8a7d95f7add45a81?color=brightgreen&logo=codacy&logoColor=green&style=for-the-badge" alt="Codacy" /></a>
+    <a href="https://github.com/RMCMG/ForceSubscribe_Bot"> <img src="https://img.shields.io/github/repo-size/RMCMG/ForceSubscribe_Bot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/RMCMG/ForceSubscribe_Bot/commits/mukesh"> <img src="https://img.shields.io/github/last-commit/RMCMG/ForceSubscribe_Bot?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/RMCMG/ForceSubscribe_Bot/issues"> <img src="https://img.shields.io/github/issues/RMCMG/ForceSubscribe_Bot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/RMCMG/ForceSubscribe_Bot/network/members"> <img src="https://img.shields.io/github/forks/RMCMG/ForceSubscribe_Bot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
+</p>
 
-# Deploy to heroku
-[![Deploy](https://img.shields.io/badge/Deploy%20To-Heroku-blueviolet)](https://dashboard.heroku.com/new?button-url=android-app%3A%2F%2Forg.telegram.messenger%2F&template=https%3A%2F%2Fgithub.com%2FRMCMG%2FForceSubscribe_Bot)
+##
 
-# Deploy locally
-- `git clone https://github.com/RMCMG/ForceSubscribe_Bot`
-- `cd ForceSub`
-- `pip3 install -U -r requirements.txt`
-- `touch .env`,  `nano .env` and fill in the [vars](.env.sample), Ctrl+S, Ctrl+X
-- Run the bot, `python3 bot.py`
+## How to setup/deploy.
+For easiest way to deploy this Bot click on the below button
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/RMCMG/ForceSubscribe_Bot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+ 
+##
 
-# Credits
-<a href="https://t.me/mkspali"> <img src="https://img.shields.io/badge/This%20Bot%20Was-Made%20By%20My-orange" /> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
+## Mᴀᴅᴇ Bʏ
 
-# Check This Telegram Bot
-<a href="https://t.me/RMCMG_ForceSubscribe_Bot"> <img src="https://img.shields.io/badge/RMCMG%20Force%20Subscribe%20Bot%20-orange" /> <img src="https://img.shields.io/badge/Best-Bot-ff69b4" /> </a>
+<a href="https://t.me/mkspali"> <img src="https://img.shields.io/badge/Bestest-Master-ff69b4" /> </a>
+<a href="https://t.me/mkspali"><img src="https://img.shields.io/badge/Telegram-Mukesh%20Solanki-gold?&style=flat-square?&logo=telegram" width=600px></a></p>
+
+
+##
+
+## Sᴜᴘᴘᴏʀᴛ
+
+<a href="https://t.me/RMCMG_Bots"> <img src="https://img.shields.io/badge/Join-Our-green" /> <img src="https://img.shields.io/badge/Support-Channel-critical" /> </a>
+<a href="https://t.me/RMCMG_Bots"><img src="https://img.shields.io/badge/Telegram-RMCMG%20Bots%20-gold?&style=flat-square?&logo=telegram" width=600px></a></p>
+
+
+##
+
+## Sᴏᴜʀᴄᴇ
+
+* <img src="https://img.shields.io/badge/Python-black" width=50px/>  <img src="https://img.shields.io/badge/Telethn-black" width=50px/>
+
+##
+
+## Find RMCMG_ForceSubscribe_Bot on Telegram
+<a href="https://t.me/RMCMG_ForceSubscribe_Bot"> <img src="https://img.shields.io/badge/Best-Bot-ff69b4" /> </a>
+<a href="https://t.me/RMCMG_ForceSubscribe_Bot"><img src="https://img.shields.io/badge/Telegram-RMCMG%20Force%20Subscribe%20Bot-gold?&style=flat-square?&logo=telegram" width=600px></a></p>
+
+##
+
+## A modular Telegram Python bot running on python3 with a sqlalchemy database.
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/RMCMG/ForceSubscribe_Bot.js/graphs/commit-activity) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://perso.crans.org/besson/LICENSE.html) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
